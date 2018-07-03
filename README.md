@@ -1,4 +1,3 @@
-
 # Difficulty Targets
 
 Target is a bit hard to work with. We know that this is the number that the hash must be below, but as humans, it's hard to fathom the difference between a 180-bit number and a 190-bit number. The first is a thousand times smaller, but from looking at targets, it's not easy to contextualize.
@@ -49,13 +48,13 @@ print(difficulty)
 f2881718
 ```
 
-Bits to target formula is 
+Bits to target formula is
 
-\\(coefficient\cdot256^{(exponent-3)}\\) 
+\\(coefficient\cdot256^{(exponent-3)}\\)
 
 where coefficient is the first three bytes in little endian and exponent is the last byte.
 
-Target to Difficulty formula is 
+Target to Difficulty formula is
 
 \\(difficulty = min / target\\)
 
