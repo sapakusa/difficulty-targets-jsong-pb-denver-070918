@@ -70,7 +70,7 @@ hex_bits = 'f2881718'
 # bytes.fromhex to get the bits
 # last byte is exponent
 # first three bytes are the coefficient in little endian
-# plug into formula coefficient * 2^(8*(exponent-3)) to get the target
+# plug into formula coefficient * 256^(exponent-3) to get the target
 # print target using print('{:x}'.format(target).zfill(64))
 
 hex_min_bits = 'ffff001d'
